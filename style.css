@@ -1,16 +1,24 @@
-body {
 
+
+body {
+    font-family: 'DM Serif Display', serif;
 }
 
 header {
-
+    display: flex;
+    float: left;
+    background-color: blue;
+    width: 25%;
 }
 
 section {
-
+    display: flex;
+    float: center;
+    background-color: green;
+    margin-top: 30px;
 }
 
-.hidden {
+.list {
 
 }
 
@@ -44,4 +52,8 @@ section {
 
 #c {
     
+}
+
+.hidden {
+
 }
