@@ -1,22 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-body {
+html {
     font-family: 'DM Serif Display', serif;
 }
 
-header {
+section {
+    min-height: 100vh;
+    width: 100%;
     display: flex;
-    float: left;
-    background-color: blue;
-    width: 25%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0,128,0,.5);
 }
 
-section {
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
     display: flex;
-    float: center;
-    background-color: green;
-    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
 }
+
+.left {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background:url(/content/images/img.jpg) no-repeat center / cover;
+    border-radius: 8px;
+}
+
+.left h1 {
+    font-size: 40px;
+}
+
+.left .first {
+    font-size: 30px;
+}
+
+.left .second {
+    font-size: 30px;
+}
+
+.right {
+    width: 50%;
+    min-height: 400px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+}
+
 
 .list {
 
