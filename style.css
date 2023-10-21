@@ -14,7 +14,7 @@ html {
     background-size: cover;
 }
 
-.header {
+header {
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -103,9 +103,17 @@ section {
     grid-auto-flow: column;
 }
 
+#div2 {
+    font-size: smaller;
+}
+
 .projects {
     display: grid;
     grid-auto-flow: column;
+}
+
+#div3 {
+    font-size: smaller;
 }
 
 .skills {
@@ -113,9 +121,17 @@ section {
     grid-auto-flow: column;
 }
 
+#div4 {
+    font-size: smaller;
+}
+
 .contact {
     display: grid;
     grid-auto-flow: column;
+}
+
+#div5 {
+    font-size: smaller;
 }
 
 #c {

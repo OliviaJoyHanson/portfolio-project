@@ -2,11 +2,40 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#about").click(function(){
+                    $("#div2").toggle();
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#projects").click(function(){
+                    $("#div3").toggle();
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#skills").click(function(){
+                    $("#div4").toggle();
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#contact").click(function(){
+                    $("#div5").toggle();
+                });
+            });
+        </script>
     </head>
     <body>
-        <div class="header">
+        <header>
             <h1>FULL-STACK SOFTWARE ENGINEER</h1>
-        </div>
+        </header>
         <section>
             
             <div class="container">
@@ -28,13 +57,12 @@
                             <div>O</div>
                             <div>N</div>
                         </div>
-                    </div>                
+                    </div>               
                 </div>
                 <div class="right">
                     <div class="content">
-                        
                         <a href="#" id="about">
-                            <div class="about">
+                            <div id="div1" class="about">
                                 <div>A</div>
                                 <div>B</div>
                                 <div>O</div>
@@ -45,7 +73,9 @@
                                 <div>E</div>
                             </div>
                         </a>
-                        
+                        <div id="div2" style="display:none">
+                            <p>Hailing from the cornfields of Indiana, Olivia has devoted her life to exploring the interesting and unique. She went to Ohio University, studying Mechanical Engineering, but soon grew bored and picked up poetry. Olivia spent a stint in Denver writing poetry which ended with returning to her home state. Photography followed soon after; she opened up a small studio and explored her visually creative side. All of this experience culminates into a mind both analytically and creatively driven. Software Engineering deemed itself the natural career for her, and she quickly picked up several languages to experiment with and, again, create.</p>
+                        </div>
                         <a href="#" id="projects">
                             <div class="projects">
                                 <div>P</div>
@@ -58,6 +88,9 @@
                                 <div>S</div>
                             </div>
                         </a>
+                        <div id="div3" style="display:none">
+                            <a href="">
+                        </div>
                         <a href="#" id="skills">
                             <div class="skills">
                                 <div>S</div>
@@ -68,6 +101,9 @@
                                 <div>S</div>
                             </div>
                         </a>
+                        <div id="div4" style="display:none">
+                            <p>hello</p>
+                        </div>
                         <a href="#" id="contact">
                             <div class="contact">
                                 <div>C</div>
@@ -79,6 +115,9 @@
                                 <div>T</div>
                             </div>
                         </a>
+                        <div id="div5" style="display:none">
+                            <p>hello</p>
+                        </div>
                     </div>
                 </div>
             </div>
