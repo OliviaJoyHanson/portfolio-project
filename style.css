@@ -131,13 +131,27 @@ section {
 }
 
 #div5 {
-    font-size: smaller;
+    font-size: 20px;
 }
 
-#c {
+@media only screen and (max-width: 639px) {
+    .left .name {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .left .name {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 524px) {
+    .left .name {
+        font-size: 25px;
+    }
     
-}
-
-.hidden {
-
+    .right {
+        font-size: 35px;
+    }
 }
