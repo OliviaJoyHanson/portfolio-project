@@ -1,61 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /*background-color: white;*/
+    text-align: center;
 }
 
 html {
-    font-family: 'DM Serif Display', serif;
+    background:url(./content/images/chicago.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: 'Archivo', sans-serif;
+    font-size: 20px;
+    padding: 30px;
 }
 
 section {
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background:url(./content/images/chicago.jpg) no-repeat center / cover ;
+    /*background-color: green;*/
 }
 
 .container {
     width: 90%;
-    max-width: 1000px;
-    height: 600px;
+    max-width: 800px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    background-color: aqua;
+    /*background-color: blue;*/
 }
 
 .left {
     width: 50%;
     height: 300px;
     display: flex;
-    align-items:flex-start;
-    justify-content: left;
+    align-items: flex-start;
+    justify-content: center;
     padding: 30px;
     background:url(/content/images/oilspill.jpg) no-repeat center / cover;
     border-radius: 8px;
 }
 
-.left h1 {
+.left .name {
+    width: 100%;
+    font-family: 'Nosifer', sans-serif;
     font-size: 40px;
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 10px;
 }
 
-.left .first {
-    font-size: 30px;
+.first {
+    display: grid;
+    grid-auto-flow: column;
 }
 
-.left .second {
-    font-size: 30px;
+.last {
+    display: grid;
+    grid-auto-flow: column;
 }
 
 .right {
-    width: 50%;
+    font-family: 'Archivo', sans-serif;
+    font-size: 40px;
+    width: 60%;
     min-height: 300px;
-    background-color: blue;
+    background:url(./content/images/oilslickblue.jpg) no-repeat center / cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,42 +86,36 @@ section {
     margin-top: 200px;
 }
 
+.content {
+    width: 100%;
+    display: grid;
+    row-gap: 20px;
+}
+
+
 .right a {
     text-decoration: none;
-    color: pink;
+    color: black;
 }
 
-
-.list {
-
+.about {
+    display: grid;
+    grid-auto-flow: column;
 }
 
-#about {
-
+.projects {
+    display: grid;
+    grid-auto-flow: column;
 }
 
-#a {
-
+.skills {
+    display: grid;
+    grid-auto-flow: column;
 }
 
-#projects {
-
-}
-
-#p {
-
-}
-
-#skills {
-
-}
-
-#s {
-
-}
-
-#contact {
-
+.contact {
+    display: grid;
+    grid-auto-flow: column;
 }
 
 #c {
